@@ -17,6 +17,10 @@ header a:hover{
 #logo{
    height:300px;
    width: 300px;
+   justify-content: center;
+   display: block;
+   margin-left: auto;
+    margin-right: auto
 }
 
 body{
@@ -43,6 +47,7 @@ header{
 
 .main-content{
    flex-grow: 1;
+   
 }
 
 .error-msg{
@@ -52,8 +57,10 @@ header{
 
 .inside-content{
    padding:10px;
-   display: flex;
+   display: block;
    justify-content: center;
+   text-align: center;
+   
 }
 
 nav{
@@ -74,7 +81,12 @@ form{
 }
 
 .form-1{
-   position: absolute;
+   display: block;
+   justify-content: center;
+   margin-left: auto;
+   margin-right: auto;
+   height:20px;
+   width: 300px;
   
 }
 
