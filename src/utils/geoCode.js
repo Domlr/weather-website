@@ -2,11 +2,11 @@ const request = require('request');
 const aws = require('aws-sdk');
 
 let API = new aws.S3({
-    apiKey: process.env.S3_KEY
+    accessKeyId: process.env.S3_API,
   });
 
 const geoCode = (location, callback)=>{
-    const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${location}.json?access_token=${API.apiKey}&limit=1`;
+    const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${location}.json?access_token=${API.accessKeyId}&limit=1`;
 
     request({url, json: true}, (err, {body}) => {
         if(err){
